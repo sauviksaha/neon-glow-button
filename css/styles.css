@@ -1,0 +1,43 @@
+:root {
+  --color: #fb3640;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background: #0e0e0e;
+}
+
+.container {
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+  display: grid;
+  grid-template-columns: auto;
+  align-items: center;
+  justify-items: center;
+}
+
+.button {
+  font-family: "Shadows Into Light", sans-serif;
+  position: absolute;
+  text-align: center;
+  width: 350px;
+  padding: 40px;
+  font-size: 35px;
+  color: var(--color);
+  font-weight: bold;
+  border: 5px solid var(--color);
+  text-transform: uppercase;
+  cursor: pointer;
+  border-radius: 100px;
+  letter-spacing: 15px;
+  transition: 0.5s;
+  user-select: none;
+}
+
+.button:hover {
+  box-shadow: 0 5px 50px 0 var(--color) inset, 0 5px 50px 0 var(--color),
+    0 5px 50px 0 var(--color) inset, 0 5px 50px 0 var(--color);
+  text-shadow: 0 5px 50px 0 var(--color), 0 5px 50px 0 var(--color);
+}
